@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html,
+        body {
+            background: none !important;
+        }
+
+        .calc {
+            min-width: 255px;
+        }
+    </style>
+</head>
+
+<body class="p-2">
+    <div class="bg-black p-3 w-[245px] rounded-2xl calc">
+        <div
+            class="w-full text-4xl text-white font-rCondensed font-bol tracking-wide text-right pr-3 py-2 __value max-w-[240px] break-all transition-all ease-in-out select-none">
+            <span class="">0</span>
+        </div>
+        <div class="flex space-x-2.5 py-[5px] select-none">
+            <span
+                class="bg-[#A5A5A5] rounded-full p-6 text-black font-rCondensed text-xl flex items-center justify-center active:bg-[#c5c4c4] transition-colors ease-linear btn__clear"><span
+                    class="absolute">AC</span>
+            </span>
+            <span
+                class="bg-[#A5A5A5] rounded-full p-6 text-black font-rCondensed text-xl flex items-center justify-center active:bg-[#c5c4c4] transition-colors ease-linear btn__toggle"><span
+                    class="absolute">+/-</span></span>
+            <span
+                class="bg-[#A5A5A5] rounded-full p-6 text-black font-rCondensed text-xl flex items-center justify-center active:bg-[#c5c4c4] transition-colors ease-linear btn__percentage"><span
+                    class="absolute">%</span></span>
+            <span
+                class="bg-[#FD9E18] rounded-full p-6 text-white font-rCondensed text-xl flex items-center justify-center active:bg-white active:text-[#FD9E18] transition-colors ease-linear btn__divide"><span
+                    class="absolute">÷</span></span>
+        </div>
+        <div class="flex space-x-2.5 py-[5px] select-none">
+            <span
+                class="bg-[#333333] rounded-full p-6 text-white font-rCondensed text-xl flex items-center justify-center active:bg-[#4f4f4f] transition-colors ease-linear btn__seven"><span
+                    class="absolute">7</span></span>
+            <span
+                class="bg-[#333333] rounded-full p-6 text-white font-rCondensed text-xl flex items-center justify-center active:bg-[#4f4f4f] transition-colors ease-linear btn__eight"><span
+                    class="absolute">8</span></span>
+            <span
+                class="bg-[#333333] rounded-full p-6 text-white font-rCondensed text-xl flex items-center justify-center active:bg-[#4f4f4f] transition-colors ease-linear btn__nine"><span
+                    class="absolute">9</span></span>
+            <span
+                class="bg-[#FD9E18] rounded-full p-6 text-white font-rCondensed text-xl flex items-center justify-center active:bg-white active:text-[#FD9E18] transition-colors ease-linear btn__multiply"><span
+                    class="absolute">x</span></span>
+        </div>
+        <div class="flex space-x-2.5 py-[5px] select-none">
+            <span
+                class="bg-[#333333] rounded-full p-6 text-white font-rCondensed text-xl flex items-center justify-center active:bg-[#4f4f4f] transition-colors ease-linear btn__four"><span
+                    class="absolute">4</span></span>
+            <span
+                class="bg-[#333333] rounded-full p-6 text-white font-rCondensed text-xl flex items-center justify-center active:bg-[#4f4f4f] transition-colors ease-linear btn__five"><span
+                    class="absolute">5</span></span>
+            <span
+                class="bg-[#333333] rounded-full p-6 text-white font-rCondensed text-xl flex items-center justify-center active:bg-[#4f4f4f] transition-colors ease-linear btn__six"><span
+                    class="absolute">6</span></span>
+            <span
+                class="bg-[#FD9E18] rounded-full p-6 text-white font-rCondensed text-xl flex items-center justify-center active:bg-white active:text-[#FD9E18] transition-colors ease-linear btn__subtract"><span
+                    class="absolute">-</span></span>
+        </div>
+        <div class="flex space-x-2.5 py-[5px] select-none">
+            <span
+                class="bg-[#333333] rounded-full p-6 text-white font-rCondensed text-xl flex items-center justify-center active:bg-[#4f4f4f] transition-colors ease-linear btn__one"><span
+                    class="absolute">1</span></span>
+            <span
+                class="bg-[#333333] rounded-full p-6 text-white font-rCondensed text-xl flex items-center justify-center active:bg-[#4f4f4f] transition-colors ease-linear btn__two"><span
+                    class="absolute">2</span></span>
+            <span
+                class="bg-[#333333] rounded-full p-6 text-white font-rCondensed text-xl flex items-center justify-center active:bg-[#4f4f4f] transition-colors ease-linear btn__three"><span
+                    class="absolute">3</span></span>
+            <span
+                class="bg-[#FD9E18] rounded-full p-6 text-white font-rCondensed text-xl flex items-center justify-center active:bg-white active:text-[#FD9E18] transition-colors ease-linear btn__add"><span
+                    class="absolute">+</span></span>
+        </div>
+        <div class="flex space-x-2.5 py-[5px]">
+            <span
+                class="bg-[#333333] rounded-full px-[52px] py-6 text-white font-rCondensed text-xl flex justify-center items-center active:bg-[#4f4f4f] transition-colors ease-linear btn__zero">
+                <span class="absolute text-left w-16">0</span></span>
+            <span
+                class="bg-[#333333] rounded-full p-6 text-white font-rCondensed text-xl flex justify-center items-center active:bg-[#4f4f4f] transition-colors ease-linear btn__decimal">
+                <span class="absolute">.</span></span>
+            <span
+                class="bg-[#FD9E18] rounded-full p-6 text-white font-rCondensed text-xl flex justify-center items-center active:bg-white active:text-[#FD9E18] transition-colors ease-linear btn__equals">
+                <span class="absolute">=</span></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
